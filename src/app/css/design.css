@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizning: border-box;
+}
+body{
+	background: url("../bilder/klocka.jpg");
+}
+#wrapper{
+	width: 85%;
+	max-width: 980px;
+	margin: 2% auto;
+}
+.startKontainer{
+	margin: 0 auto;
+	width: 15%;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform 1s , opacity 1s;
+}
+.startKontainer p{
+	padding: 20%;
+	font-size: 3em;
+	text-decoration: underline;
+	color: #263238;
+}
+.startKontainer p.stopp{
+	color: red;
+}
+.startKontainer:hover{
+	opacity: 0.7;
+	transform: rotate(360deg);
+}
+.timer{
+	width: 60%;
+	height: 0px;
+	padding: 30% 0;
+	margin: 5% auto;
+	border: 5px solid #263238;
+	background-color: #E0E0E0;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+}
+.timer p{
+	 flex: 1;
+	 text-align: center;
+	 font-size: 3em;
+	 color: #263238;
+	 letter-spacing: 10px;
+}
+ul{
+	text-align: center;
+}
+ul li{
+	list-style-type: none;
+	color: #263238;
+	font-size: 3em;
+	border-bottom: 4px solid #263238;
+}
+
+@media screen and (min-width: 781px){
+	#wrapper{
+		max-width: 664px;
+		max-height: 564px;
+	}
+	.timer{
+		width: 100%;
+		padding: 42.5% 0;
+	}
+	.timer p{
+		 font-size: 5em;
+	}
+	ul li{
+		font-size: 3.5em;
+	}
+}
+@media screen and (max-width: 780px){
+	#wrapper{
+		width: 100%;
+		margin: 2% auto;	
+	}
+	.timer{
+		width: 80%;
+		padding: 40% 0;
+	}
+	.timer p{
+		 font-size: 3.8em;
+	}
+	ul li{
+		font-size: 3em;
+	}
+}
+@media screen and (max-width: 440px){
+	#wrapper{
+		width: 100%;
+	}
+	.startKontainer p{
+		margin: 0 -35px;
+	}
+	.timer{
+		width: 95%;
+		padding: 46% 0;
+	}
+	.timer p{
+		 font-size: 3.2em;
+	}
+	ul li{
+		font-size: 3.2em;
+	}
+
+}
